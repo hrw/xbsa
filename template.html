@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>xBSA checklist</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/colreorder/1.5.2/css/colReorder.dataTables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.1.7/css/fixedHeader.dataTables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/datatables.mark.js/2.0.0/datatables.mark.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/plug-ins/1.10.13/features/mark.js/datatables.mark.min.css"/>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.print.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/colreorder/1.5.2/js/dataTables.colReorder.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/fixedheader/3.1.7/js/dataTables.fixedHeader.min.js"></script>
+    <script type="text/javascript" id="js">
+            $$(document).ready(function() {
+                    $$("table").DataTable( {
+                            pageLength  : -1,
+                            fixedHeader : true,
+                            colReorder  : true,
+                            ordering    : false,
+                            mark        : true,
+                            dom         : 'Bt',
+                            buttons     : [
+                            ]
+                    });
+    });
+    </script>
+    <style type="text/css">
+
+table {
+        border: 1px solid #000;
+}
+
+table th {
+        text-align: center;
+        padding: 0.5em;
+        line-height: 2em;
+        color: white;
+}
+
+table thead {
+        border: 1px solid black;
+        background-color: grey;
+}
+
+table td {
+        padding: 0.5em;
+}
+
+table tbody tr.odd td {
+        background-color: lightgrey;
+}
+    </style>
+</head>
+<body>
+
+<h1>Introduction</h1>
+    <p>
+        This table shows which BSA/SBSA rules are required for each level of those specifications.
+    </p>
+
+    <p>Columns can be reordered by dragging column header.</p>
+
+$xbsa_table    
+
+</body>
+</html>
